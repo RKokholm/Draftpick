@@ -1,0 +1,211 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	height: 810px;
+}
+
+#topheader {
+	width: 100%;
+	height: 45px;
+	background: #F64747;
+	
+}
+
+#topheadercenter {
+	width: 1000px;
+	height: 45px;
+	margin: auto;
+}
+
+#title {
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 32px;
+	font-weight: 600;
+	position: rele
+	margin: 1px 0px 0px 41px;
+	text-decoration: none;
+	float: left;
+}
+
+#content {
+	width: 1000px;
+	height: 100%;
+	margin: auto;
+}
+
+#footer {
+	width: 100%;
+	height: 100px;
+	background: #2e2e2e;
+}
+
+#footertext {
+	color: rgb(73, 73, 73);
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 22px;
+	font-weight: 600;
+	text-align: center;
+	display: block;
+	padding: 37px 0px 0px 0px;
+	letter-spacing: 3px;
+}
+
+.nav {
+	margin: auto;
+	display: block;
+	height: 23px;
+	width: 390px;
+}
+
+.nav ul {
+	position: absolute;
+	margin: 5px 0px;
+}
+
+.nav ul li {
+	float: left;
+	list-style-type: none;
+	padding: 5px 18px;
+	border: 1px solid transparent;
+}
+
+.nav ul li:hover {
+	float: left;
+	list-style-type: none;
+	border-radius: 2px;
+	border: 1px solid white;
+	-webkit-transition-duration: 0.4s;
+}
+
+.nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+}
+
+.signin {
+	float: right;
+}
+
+.signin ul li {
+	float: left;
+	list-style-type: none;
+	padding: 5px 7px;
+	margin: 6px 0px;
+}
+
+.signin ul li:nth-child(1) {
+	float: left;
+	list-style-type: none;
+	padding: 5px 7px;
+	margin: 6px 0px;
+	border-right: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+
+.signin ul li a{
+	color: white;
+	text-decoration: none;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+}
+
+#loginarea {
+	width: 380px;
+	height: 300px;
+	background: rgb(246, 71, 71);
+	margin: 115px auto;
+}
+
+#loginheader {
+	width: 100%;
+	height: 50px;
+	background: rgb(224, 64, 64);
+	box-shadow: 0px 2px 2px -1px rgba(0, 0, 0, 0.26), inset 0px 0px 0px white;
+}
+
+#headerhalf {
+	background: rgb(232, 68, 68);
+	height: 25px;
+}
+
+#logintitle {
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: center;
+	display: block;
+	font-size: 27px;
+	padding: 6px 0px;
+}
+
+.login {
+	margin: 47px 0px 0px 0px;
+}
+
+.login input[type="text"], .login input[type="password"]{
+	padding: 10px 60px 10px 10px;
+	margin: 15px auto;
+	border-radius: 3px;
+	border: 1px solid rgb(221, 50, 50);
+	display: block;
+}
+
+.login input[type="submit"]{
+	padding: 10px 50px;
+	margin: 54px auto;
+	border-radius: 2px;
+	text-align: center;
+	border: 1px solid rgb(221, 50, 50);
+	display: block;
+	background: #DD3232;
+	width: 100%;
+	height: 58px;
+}
+
+.login input[type="submit"]:hover{
+	padding: 10px 50px;
+	margin: 54px auto;
+	border-radius: 2px;
+	text-align: center;
+	border: 1px solid rgb(221, 50, 50);
+	display: block;
+	background: #C02727;
+	width: 100%;
+	height: 58px;
+}
+
+.error {
+	text-align: center;
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+	display: block;
+	margin: 0px 0px 0px 0px;
+}
+
+.submit {
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	cursor: pointer;
+}
