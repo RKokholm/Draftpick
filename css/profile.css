@@ -181,7 +181,7 @@ body {
 	margin: 5px 0px 0px 0px;	
 }
 
-.username {
+.user {
 	color: black;
 	text-align: center;
 	display: block;
@@ -248,6 +248,15 @@ body {
 	display: block;
 }
 
+.editprofileform textarea:focus {
+	resize: none;
+	margin: auto;
+	display: block;
+	outline-color: rgba(246, 71, 71, 0.33);
+    
+}
+
+
 .editprofileform [type="submit"]{
 	display: block;
 	float: right;
@@ -278,4 +287,18 @@ body {
 
 .abouttextarea {
 	margin: 14px;
+}
+
+.saved {
+	background: rgb(246, 71, 71);
+	height: 40px;
+	width: 110px;
+	box-sizing: border-box;
+	border-radius: 2px;
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: center;
+	font-size: 18px;
+	padding: 7px 0px 0px 0px;
+	margin: 17px auto;
 }

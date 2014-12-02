@@ -87,7 +87,7 @@
 		<div class="editprofiletitle">
 			<span>Edit profile</span>
 		</div>
-		<span class="editabout">About</span>
+		
 
 
 		<?php
@@ -117,13 +117,24 @@
 
 					$sql = "INSERT INTO profiles (profile_id, about) VALUES ($pid, '$aboutcontent')";
 					mysql_query($sql);
-					$saved = "Saved!";
+					$saved = "Saved";
 
 				}
 			}
 
 		?>
 
+
+
+		<?php 
+
+			if(isset($saved)){
+				?><div class="saved"><?=$saved;?></div><?php
+			}
+
+		?>
+
+		<span class="editabout">About</span>
 
 		<form class="editprofileform" name="about" action="editprofile.php?pid=<?=$id;?>" method="POST">
 
@@ -133,15 +144,6 @@
 		</form>
 
 	</div>
-
-
-		<?php 
-
-			if(isset($saved)){
-				echo $saved;
-			}
-
-		?>
 
 </div>
 
