@@ -136,6 +136,7 @@ body {
 	width: 200px;
 	height: 100%;
 	border-right: 1px solid rgb(239, 239, 239);
+	position: absolute;
 }
 
 .profilepicture {
@@ -149,7 +150,7 @@ body {
 	width: 157px;
 	height: 29px;
 	background: rgb(246, 71, 71);
-	margin: 7px auto;
+	margin: 12px auto;
 	border-radius: 1px;
 }
 
@@ -177,4 +178,104 @@ body {
 	text-align: center;
 	display: block;
 	font-family: 'Source Sans Pro', sans-serif;
+	margin: 5px 0px 0px 0px;	
+}
+
+.user {
+	color: black;
+	text-align: center;
+	display: block;
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 5px 0px 0px 0px;
+	font-size: 20px;
+}
+
+.infoarea {
+	width: 783px;
+	height: 100%;
+	float: right;
+}
+
+.about {
+	height: 270px;
+}
+
+.sectionheader {
+	height: 33px;
+	border-bottom: 1px solid rgb(239, 239, 239);
+}
+
+.sectionheader span {
+	color: red;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	margin: 0px 0px 0px 12px;
+}
+
+.sectionheader span span {
+	color: rgb(150, 42, 42);
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0px 0px 0px 4px;
+}
+
+.editabout {
+	color: red;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 23px;
+	margin: 0px 0px 4px 112px;
+	display: block;
+}
+
+.editprofiletitle span {
+	color: red;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 30px;
+	text-align: center;
+	display: block;
+	margin: 5px 0px 10px 0px;
+}
+
+.underline {
+	width: 170px;
+	border-bottom: 1px solid rgb(215, 215, 215);
+	margin: 12px auto 0px auto;
+	display: block;
+}
+
+.editprofileform textarea {
+	resize: none;
+	margin: auto;
+	display: block;
+}
+
+.editprofileform [type="submit"]{
+	display: block;
+	float: right;
+	margin: 20px 140px 0px 0px;
+	background: rgb(246, 71, 71);
+	border: 2px solid rgb(246, 71, 71);
+	border-radius: 2px;
+	padding: 5px 32px;
+	color: rgb(255, 255, 255);
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 17px;
+}
+
+.editprofileform [type="submit"]:hover{
+	display: block;
+	float: right;
+	margin: 20px 140px 0px 0px;
+	background: rgb(255, 255, 255);
+	border: 2px solid rgb(246, 71, 71);
+	border-radius: 2px;
+	padding: 5px 32px;
+	color: rgb(246, 71, 71);
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 17px;
+	-webkit-transition-duration: 0.5s;
+	cursor: pointer;
+}
+
+.abouttextarea {
+	margin: 14px;
 }

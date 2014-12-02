@@ -57,25 +57,25 @@
 
 			<div class="underline"></div>
 			
-			<?php
-
-	if (isset($_SESSION['id']) && $_SESSION['id'] == $pid){
+<?php
+	
+	if (isset($_SESSION['id']) == $pid){
 
 		?>
-			<a class="editprofilelink" href="editprofile.php?pid=<?=$id;?>">
+			<a class="editprofilelink" href="profile.php?pid=<?=$id;?>.">
 				<div class="editprofile">
 
 					<div class="editprofilehalf">
 					</div>
 
-					<span>Edit Profile</span>
+					<span>Return to profile</span>
 				</div>
 			</a>
 		<?php
-	
 	}
 
 ?>
+
 
 </div>
 
@@ -84,25 +84,64 @@
 <div class="infoarea">
 
 	<div class="about">
-		<div class="sectionheader">
-			<span>About <span><?=$username?></span></span>
+		<div class="editprofiletitle">
+			<span>Edit profile</span>
 		</div>
-		<div class="abouttextarea">
+		<span class="editabout">About</span>
 
-			<?php
 
-				$profile_data = mysql_query("SELECT id, profile_id, about FROM profiles WHERE profile_id=$pid");
-				$fetch_data = mysql_fetch_assoc($profile_data);
+		<?php
 
-				$about = $fetch_data['about'];
+			$profile_data = mysql_query("SELECT id, profile_id, about FROM profiles WHERE profile_id=$pid");
+			$fetch_data = mysql_fetch_assoc($profile_data);
 
-				echo nl2br($about);
+			$about = $fetch_data['about'];
 
-			?>
+		?>
 
-		</div>
+		<?php
+
+			if(isset($_POST['aboutform'])){
+
+				if(mysql_num_rows($profile_data) > 0){
+
+				$aboutcontent = $_POST['about'];
+
+				$sql = "UPDATE profiles SET profile_id=$pid, about='$aboutcontent' WHERE profile_id=$pid";
+				mysql_query($sql);
+				$saved = "Saved!";
+				
+				} else {
+
+					$aboutcontent = $_POST['about'];
+
+					$sql = "INSERT INTO profiles (profile_id, about) VALUES ($pid, '$aboutcontent')";
+					mysql_query($sql);
+					$saved = "Saved!";
+
+				}
+			}
+
+		?>
+
+
+		<form class="editprofileform" name="about" action="editprofile.php?pid=<?=$id;?>" method="POST">
+
+			<textarea rows="15" cols="80" name="about" maxlength="1500"><?=$about;?></textarea>
+			<input type="submit" name="aboutform" value="Save"></input>
+
+		</form>
 
 	</div>
+
+
+		<?php 
+
+			if(isset($saved)){
+				echo $saved;
+			}
+
+		?>
 
 </div>
 
