@@ -150,3 +150,18 @@ body {
 	text-decoration: none;
 }
 
+.rank{
+	width: 50%;
+	float: left;
+}
+
+.username{
+	width: 50%;
+	float: left;
+
+}
+
+.list {
+	list-style-type: none;
+	width: 400px;
+}

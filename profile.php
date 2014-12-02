@@ -52,7 +52,7 @@
 			
 
 			?>
-			<span class="user"><?=$username;?></span>
+			<span class="username"><?=$username;?></span>
 			<span class="rank"><?=getMyRank($rank);?></span>
 
 			<div class="underline"></div>
