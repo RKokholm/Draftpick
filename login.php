@@ -13,13 +13,14 @@ session_start();
 
 			if ($username&&$password) {
 
-				$query = mysql_query("SELECT id, username, password, email FROM users WHERE username='$username' and password='$password'");
+				$query = mysql_query("SELECT id, username, password, email, rank FROM users WHERE username='$username' and password='$password'");
 				$numrows = mysql_num_rows($query);
 
 
 				if ($numrows==1) {
 					$row = mysql_fetch_assoc($query);
 					$_SESSION['id'] = $row['id'];
+					$_SESSION['rank'] = $row['rank'];
 					header('location: index.php');
 
 				} else {

@@ -57,7 +57,7 @@ session_start();
 					$sql = "INSERT INTO users (name, username, password, email) VALUES ('$name', '$username', '$password', '$email')";
 					if(mysql_query($sql)){
 						$success = 'Success!';
-						header('location: login.php');
+						header('refresh:2;url=login.php');
 					}
 				}
 			}
@@ -78,16 +78,26 @@ session_start();
 				<input type="password" name="password" placeholder="Password">
 				<input type="password" name="repeatpassword" placeholder="Repeat password">
 				<input type="text" name="email" placeholder="Email">
+
+				<div id="errorarea">
 				
-				<?php 
-					if (!empty($errors[0])){
-						foreach($errors as $error){
-							?><span class="errormessage"><?php
-								echo $error;
-							?></span><?php
+					<?php 
+						if (!empty($errors[0])){
+							foreach($errors as $error){
+								?><span class="errormessage"><?php
+									echo $error;
+								?></span><?php
+							}
 						}
-					}
-				?>
+					?>
+
+					<?php
+						if (isset($success)){
+							echo $success;
+						}
+					?>
+
+				</div>
 
 				<input class="submit" type="submit" value="register">
 			</form>

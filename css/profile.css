@@ -20,7 +20,7 @@ time, mark, audio, video {
 }
 
 body {
-	height: 810px;
+	height: 1300px;
 }
 
 #topheader {
@@ -50,6 +50,7 @@ body {
 	width: 1000px;
 	height: 100%;
 	margin: auto;
+	padding: 10px;
 }
 
 #footer {
@@ -120,6 +121,7 @@ body {
 	padding: 5px 7px;
 	margin: 6px 0px;
 	border-right: 1px solid rgba(255, 255, 255, 0.22);
+
 }
 
 
@@ -130,101 +132,49 @@ body {
 	font-size: 18px;
 }
 
-#loginarea {
-	width: 380px;
-	height: 459px;
+#profilearea {
+	width: 200px;
+	height: 100%;
+	border-right: 1px solid rgb(239, 239, 239);
+}
+
+.profilepicture {
+	width: 84%;
+	margin: auto;
+	padding: 16px 0px 0px 0px;
+	display: block;
+}
+
+.editprofile {
+	width: 157px;
+	height: 29px;
 	background: rgb(246, 71, 71);
-	margin: 115px auto;
+	margin: 7px auto;
+	border-radius: 1px;
 }
 
-#loginheader {
-	width: 100%;
-	height: 50px;
-	background: rgb(224, 64, 64);
-	box-shadow: 0px 2px 2px -1px rgba(0, 0, 0, 0.26), inset 0px 0px 0px white;
+.editprofilehalf {
+	width: 157px;
+	height: 14px;
+	background: rgb(255, 83, 83);
+	border-radius: 1px;
 }
 
-#headerhalf {
-	background: rgb(232, 68, 68);
-	height: 25px;
-}
-
-#logintitle {
+.editprofile span {
 	color: white;
 	font-family: 'Source Sans Pro', sans-serif;
+	margin: -10px auto;
 	text-align: center;
 	display: block;
-	font-size: 27px;
-	padding: 6px 0px;
 }
 
-.login {
-	margin: 47px 0px 0px 0px;
+.editprofilelink {
+	text-decoration: none;
 }
 
-.login input[type="text"], .login input[type="password"]{
-	padding: 10px 60px 10px 10px;
-	margin: 15px auto 6px auto;
-	border-radius: 3px;
-	border: 1px solid rgb(221, 50, 50);
-	display: block;
-}
-
-.login input[type="password"]{
-	padding: 10px 60px 10px 10px;
-	margin: 15px auto 6px auto;
-	border-radius: 3px;
-	border: 1px solid rgb(221, 50, 50);
-	display: block;
-}
-
-.login input[type="submit"]{
-	padding: 10px 50px;
-	margin: 0px auto;
-	border-radius: 2px;
+.rank {
+	color: black;
 	text-align: center;
-	border: 1px solid rgb(221, 50, 50);
 	display: block;
-	background: #DD3232;
-	width: 100%;
-	height: 58px;
-}
-
-.login input[type="submit"]:hover{
-	padding: 10px 50px;
-	margin: 0px auto;
-	border-radius: 2px;
-	text-align: center;
-	border: 1px solid rgb(221, 50, 50);
-	display: block;
-	background: #C02727;
-	width: 100%;
-	height: 58px;
-}
-
-.error {
-	text-align: center;
-	color: white;
 	font-family: 'Source Sans Pro', sans-serif;
-	display: block;
-	margin: 0px 0px 0px 0px;
-}
-
-.submit {
-	color: white;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 20px;
-	cursor: pointer;
-}
-
-.errormessage {
-	text-align: center;
-	display: block;
-	color: white;
-	font-family: 'Source Sans Pro', sans-serif;
-}
-
-#errorarea {
-	height: 78px;
-	width: 100%;
 }
