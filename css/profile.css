@@ -302,3 +302,75 @@ body {
 	padding: 7px 0px 0px 0px;
 	margin: 17px auto;
 }
+
+.guidesby {
+	text-align: center;
+	display: block;
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 5px 0px;
+	font-size: 18px;
+
+}
+
+.guidetitle {
+	display: block;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 5px 0px;
+
+}
+
+.guides {
+	list-style-type: none;
+	margin: 10px auto;
+	background: rgb(246, 71, 71);
+	padding: 4px 0px 4px 0px;
+	width: 90%;
+	border: 2px solid rgb(246, 71, 71);
+	text-align: center;
+	border-radius: 2px;
+	color: white;
+
+}
+
+.guides:hover {
+	list-style-type: none;
+	margin: 10px auto;
+	background: white;
+	padding: 4px 0px 4px 0px;
+	width: 90%;
+	border: 2px solid rgb(246, 71, 71);
+	text-align: center;
+	border-radius: 2px;
+	color: rgb(246, 71, 71);
+	-webkit-transition-duration: 0.4s;
+	cursor: pointer;
+
+}
+
+.title {
+	font-family: 'Source Sans Pro', sans-serif;
+	float: left;
+	width: 33%;
+	font-size: 15px;
+	margin: 0px 0px 0px 22%;
+}
+
+.champion {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 15px;
+	float: left;
+}
+
+.date {
+	font-family: 'Source Sans Pro', sans-serif;
+	width: 60px;
+	margin: auto;
+	text-align: center;
+	font-size: 13px;
+}
+
+.merge {
+	text-align: center;
+	display: block;
+}

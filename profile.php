@@ -71,11 +71,47 @@
 					<span>Edit Profile</span>
 				</div>
 			</a>
+
+			<div class="underline"></div>
+				
 		<?php
 	
 	}
 
 ?>
+
+
+<span class="guidesby">Guides by <?=$username;?>:</span>
+
+	<?php
+
+		$query_guides = mysql_query("SELECT title, champion, date FROM champion_guides WHERE users_id=$id ORDER BY date DESC");
+
+	?>
+
+	<ul>
+		<?php
+
+			while ($row = mysql_fetch_assoc($query_guides)){
+
+				$title = ucfirst($row['title']);
+				$champion = $row['champion'];
+				$date = $row['date'];
+
+				?><li class="guides">
+			
+					<div class="title"><?=$title;?> | </div>
+					<div class="champion"><?=$champion;?></div>
+
+					<div class="date"><?=$date;?></div>
+
+				</li><?php
+
+			}
+
+		?>
+	</ul>
+
 
 </div>
 
