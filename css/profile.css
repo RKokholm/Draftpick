@@ -198,6 +198,7 @@ body {
 
 .about {
 	height: 270px;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 .sectionheader {
@@ -307,7 +308,7 @@ body {
 	text-align: center;
 	display: block;
 	font-family: 'Source Sans Pro', sans-serif;
-	margin: 5px 0px;
+	margin: 7px 0px;
 	font-size: 18px;
 
 }
@@ -324,12 +325,13 @@ body {
 	list-style-type: none;
 	margin: 10px auto;
 	background: rgb(246, 71, 71);
-	padding: 4px 0px 4px 0px;
+	padding: 4px;
 	width: 90%;
 	border: 2px solid rgb(246, 71, 71);
 	text-align: center;
 	border-radius: 2px;
 	color: white;
+	box-sizing: border-box;
 
 }
 
@@ -337,7 +339,7 @@ body {
 	list-style-type: none;
 	margin: 10px auto;
 	background: white;
-	padding: 4px 0px 4px 0px;
+	padding: 4px;
 	width: 90%;
 	border: 2px solid rgb(246, 71, 71);
 	text-align: center;
@@ -345,32 +347,47 @@ body {
 	color: rgb(246, 71, 71);
 	-webkit-transition-duration: 0.4s;
 	cursor: pointer;
+	box-sizing: border-box;
+	display: table;
 
 }
 
 .title {
 	font-family: 'Source Sans Pro', sans-serif;
-	float: left;
-	width: 33%;
-	font-size: 15px;
-	margin: 0px 0px 0px 22%;
+	font-size: 20px;
+	margin: 5px 0px 0px 0px;
 }
 
 .champion {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 15px;
-	float: left;
 }
 
 .date {
 	font-family: 'Source Sans Pro', sans-serif;
-	width: 60px;
-	margin: auto;
-	text-align: center;
 	font-size: 13px;
 }
 
-.merge {
-	text-align: center;
+.champicon {
+	width: 50px;
 	display: block;
+	float: left;
+	margin-right: 7px;
+}
+
+.rightinfo {
+	width: 110px;
+	height: 50px;
+	display: block;
+	float: left;
+}
+
+.clear {
+	clear:both;
+}
+
+.break {
+	width: 100%;
+	height: 1px;
+	border-bottom: 1px solid rgb(239, 239, 239);
 }

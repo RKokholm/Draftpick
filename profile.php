@@ -81,7 +81,7 @@
 ?>
 
 
-<span class="guidesby">Guides by <?=$username;?>:</span>
+<span class="guidesby">Latest guides:</span>
 
 	<?php
 
@@ -99,11 +99,15 @@
 				$date = $row['date'];
 
 				?><li class="guides">
-			
-					<div class="title"><?=$title;?> | </div>
-					<div class="champion"><?=$champion;?></div>
 
-					<div class="date"><?=$date;?></div>
+					<img src="graphics/threshsquare.png" class="champicon"></img>
+
+					<div class="rightinfo">
+						<div class="title"><?=$title;?></div>
+						<div class="date"><?=$date;?></div>
+					</div>
+
+					<div class="clear"></div>
 
 				</li><?php
 
@@ -121,7 +125,7 @@
 
 	<div class="about">
 		<div class="sectionheader">
-			<span>About <span><?=$username?></span></span>
+			<span>About</span>
 		</div>
 		<div class="abouttextarea">
 
@@ -139,6 +143,8 @@
 		</div>
 
 	</div>
+
+	<div class="break"></div>
 
 </div>
 
